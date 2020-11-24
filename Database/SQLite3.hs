@@ -56,6 +56,9 @@ module Database.SQLite3 (
     columnText,
     columnBlob,
 
+    -- * Enable Or Disable Extension Loading
+    setLoadExtensionEnabled,
+
     -- * Result statistics
     lastInsertRowId,
     changes,
@@ -159,6 +162,7 @@ import Database.SQLite3.Direct
     , columnBlob
     , columnInt64
     , columnDouble
+    , setLoadExtensionEnabled
     , funcArgCount
     , funcArgType
     , funcArgInt64
